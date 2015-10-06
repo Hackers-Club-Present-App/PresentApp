@@ -1,0 +1,59 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Device\"><param name=\"ios-package\" value=\"CDVDevice\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Console\"><param name=\"ios-package\" value=\"CDVLogger\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"WiFiInfo\"><param name=\"ios-package\" value=\"WiFiInfo\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "framework": {
+                "parents": {
+                    "SystemConfiguration.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "Foundation.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.achiu.wifiatt"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.achiu.wifiatt"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.achiu.wifiatt"
+        },
+        "org.apache.cordova.wifiinfo": {
+            "PACKAGE_NAME": "com.achiu.wifiatt"
+        }
+    },
+    "dependent_plugins": {}
+}
